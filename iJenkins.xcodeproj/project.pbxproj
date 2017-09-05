@@ -139,6 +139,11 @@
 		96250FC81F5EE96E00A48746 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 96250FBD1F5EE96E00A48746 /* UIImageView+AFNetworking.m */; };
 		96250FC91F5EE96E00A48746 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 96250FBE1F5EE96E00A48746 /* LICENSE */; };
 		96250FCA1F5EE96E00A48746 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 96250FBF1F5EE96E00A48746 /* README.md */; };
+		96250FD51F5EEA6200A48746 /* GCNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 96250FCD1F5EEA6200A48746 /* GCNetworkReachability.m */; };
+		96250FD61F5EEA6200A48746 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 96250FCE1F5EEA6200A48746 /* README.md */; };
+		96250FD71F5EEA6200A48746 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 96250FD01F5EEA6200A48746 /* LICENSE */; };
+		96250FD81F5EEA6200A48746 /* Lockbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 96250FD31F5EEA6200A48746 /* Lockbox.m */; };
+		96250FD91F5EEA6200A48746 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 96250FD41F5EEA6200A48746 /* README.md */; };
 		96F848A11F5860F10002AFF3 /* BonjourBuddy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F848A01F5860F10002AFF3 /* BonjourBuddy.m */; };
 		96F848A41F5861270002AFF3 /* FTHTTPCodes.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F848A31F5861270002AFF3 /* FTHTTPCodes.m */; };
 		96F848AD1F58618E0002AFF3 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F848A61F58618E0002AFF3 /* FAImageView.m */; };
@@ -372,6 +377,13 @@
 		96250FBD1F5EE96E00A48746 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		96250FBE1F5EE96E00A48746 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		96250FBF1F5EE96E00A48746 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		96250FCC1F5EEA6200A48746 /* GCNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCNetworkReachability.h; sourceTree = "<group>"; };
+		96250FCD1F5EEA6200A48746 /* GCNetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCNetworkReachability.m; sourceTree = "<group>"; };
+		96250FCE1F5EEA6200A48746 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		96250FD01F5EEA6200A48746 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		96250FD21F5EEA6200A48746 /* Lockbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lockbox.h; sourceTree = "<group>"; };
+		96250FD31F5EEA6200A48746 /* Lockbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lockbox.m; sourceTree = "<group>"; };
+		96250FD41F5EEA6200A48746 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		96F8489F1F5860F10002AFF3 /* BonjourBuddy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonjourBuddy.h; sourceTree = "<group>"; };
 		96F848A01F5860F10002AFF3 /* BonjourBuddy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonjourBuddy.m; sourceTree = "<group>"; };
 		96F848A21F5861270002AFF3 /* FTHTTPCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHTTPCodes.h; sourceTree = "<group>"; };
@@ -1310,6 +1322,8 @@
 		15D2463B17CFBD8E00793614 /* Thirdparty */ = {
 			isa = PBXGroup;
 			children = (
+				96250FCB1F5EEA6200A48746 /* GCNetworkReachability */,
+				96250FCF1F5EEA6200A48746 /* Lockbox */,
 				96250FA91F5EE96E00A48746 /* AFNetworking */,
 				1510735617D5F3B800FD083B /* XYPieChart */,
 			);
@@ -1429,6 +1443,35 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		96250FCB1F5EEA6200A48746 /* GCNetworkReachability */ = {
+			isa = PBXGroup;
+			children = (
+				96250FCC1F5EEA6200A48746 /* GCNetworkReachability.h */,
+				96250FCD1F5EEA6200A48746 /* GCNetworkReachability.m */,
+				96250FCE1F5EEA6200A48746 /* README.md */,
+			);
+			path = GCNetworkReachability;
+			sourceTree = "<group>";
+		};
+		96250FCF1F5EEA6200A48746 /* Lockbox */ = {
+			isa = PBXGroup;
+			children = (
+				96250FD01F5EEA6200A48746 /* LICENSE */,
+				96250FD11F5EEA6200A48746 /* LockBox */,
+				96250FD21F5EEA6200A48746 /* Lockbox.h */,
+				96250FD31F5EEA6200A48746 /* Lockbox.m */,
+				96250FD41F5EEA6200A48746 /* README.md */,
+			);
+			path = Lockbox;
+			sourceTree = "<group>";
+		};
+		96250FD11F5EEA6200A48746 /* LockBox */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LockBox;
+			sourceTree = "<group>";
+		};
 		96F848A91F58618E0002AFF3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1533,6 +1576,7 @@
 				1510732F17D10EFA00FD083B /* Icon120.png in Resources */,
 				1510732D17D10EFA00FD083B /* Default@2x.png in Resources */,
 				15BF18771B14D178001B44E6 /* LUIImages.json in Resources */,
+				96250FD71F5EEA6200A48746 /* LICENSE in Resources */,
 				1510732E17D10EFA00FD083B /* Icon114.png in Resources */,
 				154465DA17FC4BC900025022 /* Icon80.png in Resources */,
 				151072D117D0BA3400FD083B /* IJ_health-00to19.png in Resources */,
@@ -1621,6 +1665,7 @@
 				154466B3180651F200025022 /* FTQueueJobCell.m in Sources */,
 				15D245ED17CF9C2A00793614 /* FTViewController.m in Sources */,
 				153921D917E2155A00896FC1 /* FTJobHealthInfoCell.m in Sources */,
+				96250FD91F5EEA6200A48746 /* README.md in Sources */,
 				153921E617E2700400896FC1 /* FTBuildDetailViewController.m in Sources */,
 				1510729017D0053200FD083B /* FTAPIJobDataObject.m in Sources */,
 				1510735E17D5F44600FD083B /* FTAccountOverviewCell.m in Sources */,
@@ -1628,6 +1673,7 @@
 				153921C717E1F12E00896FC1 /* FTDownload.m in Sources */,
 				96F848A11F5860F10002AFF3 /* BonjourBuddy.m in Sources */,
 				15D245FC17CF9D9900793614 /* FTServerHomeViewController.m in Sources */,
+				96250FD51F5EEA6200A48746 /* GCNetworkReachability.m in Sources */,
 				153921DD17E21C8D00896FC1 /* FTLastBuildInfoCell.m in Sources */,
 				154466251803386700025022 /* FTManageViewController.m in Sources */,
 				15E1838A17E4CDAD00CE0DEA /* FTViewSelectorViewController.m in Sources */,
@@ -1640,6 +1686,7 @@
 				153921E217E22D0600896FC1 /* FTAPIBuildDetailDataObject.m in Sources */,
 				1510732417D0FEDD00FD083B /* FTAddAccountViewController.m in Sources */,
 				154466B61806BE8500025022 /* FTAPIPluginManagerDataObject.m in Sources */,
+				96250FD61F5EEA6200A48746 /* README.md in Sources */,
 				1544663918041B9A00025022 /* NSString+Conversions.m in Sources */,
 				15D2460E17CF9FB800793614 /* FTNoInternetConnectionViewController.m in Sources */,
 				1510728A17CFEBFA00FD083B /* NSString+URLTools.m in Sources */,
@@ -1693,6 +1740,7 @@
 				1510733617D20F8500FD083B /* FTBasicAccountCell.m in Sources */,
 				154466AF180636B900025022 /* FTLoginAlert.m in Sources */,
 				1544664B1805E84300025022 /* FTValueCell.m in Sources */,
+				96250FD81F5EEA6200A48746 /* Lockbox.m in Sources */,
 				15E1838617E3676900CE0DEA /* FTAPIJobBuildDataObject.m in Sources */,
 				154466081801FCEF00025022 /* FTIconCell.m in Sources */,
 				15D2467717CFBE3C00793614 /* FTAccountsManager.m in Sources */,
@@ -1773,8 +1821,6 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
-					"-framework",
-					"\"AFNetworking\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1867,8 +1913,6 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
-					"-framework",
-					"\"AFNetworking\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1905,8 +1949,6 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
-					"-framework",
-					"\"AFNetworking\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

@@ -3,8 +3,5 @@
 platform :ios, '9.0'
 
 target 'iJenkins' do
-  
-  pod 'Lockbox', '~> 3.0.3'
-  pod 'GCNetworkReachability', '~> 1.3.2'
 
 end
