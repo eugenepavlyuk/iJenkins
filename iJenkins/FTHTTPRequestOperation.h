@@ -8,7 +8,6 @@
 
 #import "AFHTTPRequestOperation.h"
 
-
 @interface FTHTTPRequestOperation : AFHTTPRequestOperation
 
 @property (nonatomic, strong) id <FTAPIDataAbstractObject> dataObject;

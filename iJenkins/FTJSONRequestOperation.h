@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Fuerte Innovations. All rights reserved.
 //
 
-#import <AFNetworking/AFNetworking.h>
+#import "AFJSONRequestOperation.h"
 
 @interface FTJSONRequestOperation : AFJSONRequestOperation
 
