@@ -7,105 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1ED4862A814F7DA117EF57A91311FF77 /* GCNetworkReachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 177BB1B33D3B4F3B0DFF716CA1581D9A /* GCNetworkReachability-dummy.m */; };
-		2CD9E5DD3610B9E7E1B7FCE315442AFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1034C6CADA95AF421C3230C18FA93AE7 /* Foundation.framework */; };
-		3692BBB1807AFD5D17EEB5B5DA4722B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1034C6CADA95AF421C3230C18FA93AE7 /* Foundation.framework */; };
-		4CB259D76DE37C8AA26D2810260093FE /* GCNetworkReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 720BBB1D3D7682ED36EA406B15D688AD /* GCNetworkReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60B77EAC5EB2FB8E11D8E65B0D88EA5F /* GCNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6FACF76D0CD5D532BE7DE24979D9C2 /* GCNetworkReachability.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7D240B4E556BF134FBBF46BD95C63278 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B573696740554219AB4594880EACA552 /* SystemConfiguration.framework */; };
-		7E7239526DADEE2F98E11053EDFA281B /* Pods-iJenkins-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B40DB71723087033FB21E60B99DA47 /* Pods-iJenkins-dummy.m */; };
-		7EC9728B6E3CC23BB2F386BEB38F90C7 /* Lockbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1925D3B3E2410EB426839EAFE808DC99 /* Lockbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1FCB00373064283D1A6CD2071A01914 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1034C6CADA95AF421C3230C18FA93AE7 /* Foundation.framework */; };
-		CCE03440C2BDFEE49512AE8718757346 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006CE878B6717CB1A419B4B09999DEF4 /* Security.framework */; };
-		ED518A7F6A05B97E6EF930DCC9B8C9F0 /* Lockbox.m in Sources */ = {isa = PBXBuildFile; fileRef = BED7A82EB6FDD8288280CE5142450F7C /* Lockbox.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F2445D824B64ADB64D405F72A542EC18 /* Lockbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCB8558EE1B62ED3EEB4AD8A302AC53 /* Lockbox-dummy.m */; };
+		1F03354E71843FB7CCCE6708B76F31A4 /* Pods-iJenkins-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B40DB71723087033FB21E60B99DA47 /* Pods-iJenkins-dummy.m */; };
+		83014363F19BEF23F790A6C2797DC0E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7B57DB1631FCAD56ADD743673CDD6681 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C4C9184E565F94E606DBE9BEC2E391BC;
-			remoteInfo = GCNetworkReachability;
-		};
-		E61FA2DC4FD63DEA1F6B7F1546439B42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E8A18B9A8A60B0F4FF4AEA05AFA304C;
-			remoteInfo = Lockbox;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		006CE878B6717CB1A419B4B09999DEF4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		0E9EB0D3B1CD83C29FF3630F564E90F8 /* Pods-iJenkins-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iJenkins-acknowledgements.plist"; sourceTree = "<group>"; };
-		1034C6CADA95AF421C3230C18FA93AE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		171EB50B28F97CCAA2251C7D644554A1 /* Lockbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Lockbox.xcconfig; sourceTree = "<group>"; };
-		177BB1B33D3B4F3B0DFF716CA1581D9A /* GCNetworkReachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCNetworkReachability-dummy.m"; sourceTree = "<group>"; };
-		1925D3B3E2410EB426839EAFE808DC99 /* Lockbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Lockbox.h; sourceTree = "<group>"; };
-		48C953365D1CBE22A3A6E1E0ECD9C753 /* GCNetworkReachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCNetworkReachability-prefix.pch"; sourceTree = "<group>"; };
+		417726C2B7E6644DFF3EE963D07FE4ED /* libPods-iJenkins.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-iJenkins.a"; path = "libPods-iJenkins.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0F8B173FF3CE39A691983406D995A6 /* Pods-iJenkins.enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iJenkins.enterprise.xcconfig"; sourceTree = "<group>"; };
-		5A6FACF76D0CD5D532BE7DE24979D9C2 /* GCNetworkReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GCNetworkReachability.m; sourceTree = "<group>"; };
-		5CCB8558EE1B62ED3EEB4AD8A302AC53 /* Lockbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Lockbox-dummy.m"; sourceTree = "<group>"; };
-		7043B8AE023E5F08DD44DEB07BF0B1C2 /* libPods-iJenkins.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-iJenkins.a"; path = "libPods-iJenkins.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		720BBB1D3D7682ED36EA406B15D688AD /* GCNetworkReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GCNetworkReachability.h; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73B40DB71723087033FB21E60B99DA47 /* Pods-iJenkins-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iJenkins-dummy.m"; sourceTree = "<group>"; };
-		77AF5C34CAD4880DFCBC9EE7CD709BC6 /* Lockbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Lockbox-prefix.pch"; sourceTree = "<group>"; };
 		903471BC4D91A1E1A34E108DAD8BC1BC /* Pods-iJenkins-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iJenkins-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		954303AA87034E5FB4666C98AA901389 /* Pods-iJenkins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iJenkins.debug.xcconfig"; sourceTree = "<group>"; };
-		AF2EC5813D8316004E6F740B7AABEB0B /* libLockbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLockbox.a; path = libLockbox.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2049BA984F4E85FB6F25AD32E10DA95 /* GCNetworkReachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCNetworkReachability.xcconfig; sourceTree = "<group>"; };
-		B573696740554219AB4594880EACA552 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		B77EB151303C20DFBC58F5E2F85A0E1D /* Pods-iJenkins-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iJenkins-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B78F2E83E5833BFC58BD9716004C741A /* Pods-iJenkins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iJenkins.release.xcconfig"; sourceTree = "<group>"; };
-		BED7A82EB6FDD8288280CE5142450F7C /* Lockbox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Lockbox.m; sourceTree = "<group>"; };
-		CBB3E0409B6292C10582015D2FC65A24 /* libGCNetworkReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGCNetworkReachability.a; path = libGCNetworkReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFB126FF21CEBAC5C19AF38B71D98D5 /* Pods-iJenkins-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iJenkins-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A00C78A0CCAFD6A15B65F023BB02573 /* Frameworks */ = {
+		B9000F0D9F1C2CED3D78202DD8972005 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1FCB00373064283D1A6CD2071A01914 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52B1B2E16B330CD1D20D145394BE3BF7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2CD9E5DD3610B9E7E1B7FCE315442AFF /* Foundation.framework in Frameworks */,
-				CCE03440C2BDFEE49512AE8718757346 /* Security.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E0221BCB1BCCC4A8B4C692927884ACE0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3692BBB1807AFD5D17EEB5B5DA4722B4 /* Foundation.framework in Frameworks */,
-				7D240B4E556BF134FBBF46BD95C63278 /* SystemConfiguration.framework in Frameworks */,
+				83014363F19BEF23F790A6C2797DC0E4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		019E73EC88CBF4A4F8CC2AE3202C440D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3E0409B6292C10582015D2FC65A24 /* libGCNetworkReachability.a */,
-				AF2EC5813D8316004E6F740B7AABEB0B /* libLockbox.a */,
-				7043B8AE023E5F08DD44DEB07BF0B1C2 /* libPods-iJenkins.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		057A83F74347F1A5B5073DB08114125E /* Pods-iJenkins */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,41 +53,12 @@
 			path = "Target Support Files/Pods-iJenkins";
 			sourceTree = "<group>";
 		};
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DB6F35B51AA0D5B93C78FBC10AC7772A /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3F553A36FAD3CF7EF1193A42C3D92AA7 /* GCNetworkReachability */ = {
-			isa = PBXGroup;
-			children = (
-				720BBB1D3D7682ED36EA406B15D688AD /* GCNetworkReachability.h */,
-				5A6FACF76D0CD5D532BE7DE24979D9C2 /* GCNetworkReachability.m */,
-				F003C941B064056D848D03528E20E9CD /* Support Files */,
-			);
-			name = GCNetworkReachability;
-			path = GCNetworkReachability;
-			sourceTree = "<group>";
-		};
-		7C93BEF9E8701643F94FE5D375493D2C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3F553A36FAD3CF7EF1193A42C3D92AA7 /* GCNetworkReachability */,
-				B603A1EE358622A10429B22B92F8F429 /* Lockbox */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				7C93BEF9E8701643F94FE5D375493D2C /* Pods */,
-				019E73EC88CBF4A4F8CC2AE3202C440D /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BEA99187E14BCA15E6B09CFDFABBB8FC /* Products */,
 				8DCB50020925BB6A4E677488F8F40A59 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -169,121 +71,47 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B603A1EE358622A10429B22B92F8F429 /* Lockbox */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1925D3B3E2410EB426839EAFE808DC99 /* Lockbox.h */,
-				BED7A82EB6FDD8288280CE5142450F7C /* Lockbox.m */,
-				C58F60908F6EC69B838CB8F59AED8818 /* Support Files */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
-			name = Lockbox;
-			path = Lockbox;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C58F60908F6EC69B838CB8F59AED8818 /* Support Files */ = {
+		BEA99187E14BCA15E6B09CFDFABBB8FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				171EB50B28F97CCAA2251C7D644554A1 /* Lockbox.xcconfig */,
-				5CCB8558EE1B62ED3EEB4AD8A302AC53 /* Lockbox-dummy.m */,
-				77AF5C34CAD4880DFCBC9EE7CD709BC6 /* Lockbox-prefix.pch */,
+				417726C2B7E6644DFF3EE963D07FE4ED /* libPods-iJenkins.a */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Lockbox";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		DB6F35B51AA0D5B93C78FBC10AC7772A /* iOS */ = {
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1034C6CADA95AF421C3230C18FA93AE7 /* Foundation.framework */,
-				006CE878B6717CB1A419B4B09999DEF4 /* Security.framework */,
-				B573696740554219AB4594880EACA552 /* SystemConfiguration.framework */,
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F003C941B064056D848D03528E20E9CD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B2049BA984F4E85FB6F25AD32E10DA95 /* GCNetworkReachability.xcconfig */,
-				177BB1B33D3B4F3B0DFF716CA1581D9A /* GCNetworkReachability-dummy.m */,
-				48C953365D1CBE22A3A6E1E0ECD9C753 /* GCNetworkReachability-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GCNetworkReachability";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		1790B88DF1BAF67FAB3835A4FB2BFCC7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EC9728B6E3CC23BB2F386BEB38F90C7 /* Lockbox.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD22A52E6C15CAC26CC3B524A57FB4CF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CB259D76DE37C8AA26D2810260093FE /* GCNetworkReachability.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		5E8A18B9A8A60B0F4FF4AEA05AFA304C /* Lockbox */ = {
+		A2F46A647974FBE94A3208E4E7C191DC /* Pods-iJenkins */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F33CE338B8755D3FF9F7B3185D304F0B /* Build configuration list for PBXNativeTarget "Lockbox" */;
+			buildConfigurationList = 077785406D7D40C1D1F9E08058BDEE7C /* Build configuration list for PBXNativeTarget "Pods-iJenkins" */;
 			buildPhases = (
-				63757ABFF45AD59D894D68A71A8B054C /* Sources */,
-				52B1B2E16B330CD1D20D145394BE3BF7 /* Frameworks */,
-				1790B88DF1BAF67FAB3835A4FB2BFCC7 /* Headers */,
+				46F718876D0B7BD369DCDDD241655602 /* Sources */,
+				B9000F0D9F1C2CED3D78202DD8972005 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = Lockbox;
-			productName = Lockbox;
-			productReference = AF2EC5813D8316004E6F740B7AABEB0B /* libLockbox.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		BC4B03A2F52030F9C608761CE833D691 /* Pods-iJenkins */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7CB265F9B1A6CBC997BCEAC6BFBD590A /* Build configuration list for PBXNativeTarget "Pods-iJenkins" */;
-			buildPhases = (
-				652E75C791B83917FF70B428EE5A327B /* Sources */,
-				0A00C78A0CCAFD6A15B65F023BB02573 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09AFF8A8E7B500D29C1569A6C34F55EB /* PBXTargetDependency */,
-				021F84E843FDC5BC84F261DF8AB2D989 /* PBXTargetDependency */,
 			);
 			name = "Pods-iJenkins";
 			productName = "Pods-iJenkins";
-			productReference = 7043B8AE023E5F08DD44DEB07BF0B1C2 /* libPods-iJenkins.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C4C9184E565F94E606DBE9BEC2E391BC /* GCNetworkReachability */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 96C191F876EFBC8C8B4380DBCD526D29 /* Build configuration list for PBXNativeTarget "GCNetworkReachability" */;
-			buildPhases = (
-				98CEE22E74F3213F6E1CCE53C278EACE /* Sources */,
-				E0221BCB1BCCC4A8B4C692927884ACE0 /* Frameworks */,
-				AD22A52E6C15CAC26CC3B524A57FB4CF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GCNetworkReachability;
-			productName = GCNetworkReachability;
-			productReference = CBB3E0409B6292C10582015D2FC65A24 /* libGCNetworkReachability.a */;
+			productReference = 417726C2B7E6644DFF3EE963D07FE4ED /* libPods-iJenkins.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -303,65 +131,30 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 019E73EC88CBF4A4F8CC2AE3202C440D /* Products */;
+			productRefGroup = BEA99187E14BCA15E6B09CFDFABBB8FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C4C9184E565F94E606DBE9BEC2E391BC /* GCNetworkReachability */,
-				5E8A18B9A8A60B0F4FF4AEA05AFA304C /* Lockbox */,
-				BC4B03A2F52030F9C608761CE833D691 /* Pods-iJenkins */,
+				A2F46A647974FBE94A3208E4E7C191DC /* Pods-iJenkins */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		63757ABFF45AD59D894D68A71A8B054C /* Sources */ = {
+		46F718876D0B7BD369DCDDD241655602 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2445D824B64ADB64D405F72A542EC18 /* Lockbox-dummy.m in Sources */,
-				ED518A7F6A05B97E6EF930DCC9B8C9F0 /* Lockbox.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		652E75C791B83917FF70B428EE5A327B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E7239526DADEE2F98E11053EDFA281B /* Pods-iJenkins-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98CEE22E74F3213F6E1CCE53C278EACE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1ED4862A814F7DA117EF57A91311FF77 /* GCNetworkReachability-dummy.m in Sources */,
-				60B77EAC5EB2FB8E11D8E65B0D88EA5F /* GCNetworkReachability.m in Sources */,
+				1F03354E71843FB7CCCE6708B76F31A4 /* Pods-iJenkins-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		021F84E843FDC5BC84F261DF8AB2D989 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Lockbox;
-			target = 5E8A18B9A8A60B0F4FF4AEA05AFA304C /* Lockbox */;
-			targetProxy = E61FA2DC4FD63DEA1F6B7F1546439B42 /* PBXContainerItemProxy */;
-		};
-		09AFF8A8E7B500D29C1569A6C34F55EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GCNetworkReachability;
-			target = C4C9184E565F94E606DBE9BEC2E391BC /* GCNetworkReachability */;
-			targetProxy = 7B57DB1631FCAD56ADD743673CDD6681 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		0BF563BAA50ED0A76691960EEEDA52AB /* Enterprise */ = {
+		055916BC7595BF47364175B3F7F3A85E /* Enterprise */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2049BA984F4E85FB6F25AD32E10DA95 /* GCNetworkReachability.xcconfig */;
+			baseConfigurationReference = 4B0F8B173FF3CE39A691983406D995A6 /* Pods-iJenkins.enterprise.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -369,41 +162,41 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GCNetworkReachability/GCNetworkReachability-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Enterprise;
 		};
-		3FD4290FDC447E58919C0A8536AF5B6B /* Enterprise */ = {
+		103AA6D2C3E6F9F2774C1237FAB30F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 171EB50B28F97CCAA2251C7D644554A1 /* Lockbox.xcconfig */;
+			baseConfigurationReference = 954303AA87034E5FB4666C98AA901389 /* Pods-iJenkins.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Lockbox/Lockbox-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Enterprise;
+			name = Debug;
 		};
 		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -453,75 +246,6 @@
 			};
 			name = Debug;
 		};
-		5042F208FD18D70E0B6AE9B55AA264B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 171EB50B28F97CCAA2251C7D644554A1 /* Lockbox.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Lockbox/Lockbox-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		68940A25A711B7E7696B09298EB55C52 /* Enterprise */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B0F8B173FF3CE39A691983406D995A6 /* Pods-iJenkins.enterprise.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Enterprise;
-		};
-		697748E3E581C30D0EEB7C400CD0C1EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 171EB50B28F97CCAA2251C7D644554A1 /* Lockbox.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Lockbox/Lockbox-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		85524242729F40EA9D2610721E3A7EBC /* Enterprise */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -565,53 +289,7 @@
 			};
 			name = Enterprise;
 		};
-		9B3A0CE5C339BF3EA3EAD7772B846403 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 954303AA87034E5FB4666C98AA901389 /* Pods-iJenkins.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B3F391F338A3E52D0771FDC01873BA47 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2049BA984F4E85FB6F25AD32E10DA95 /* GCNetworkReachability.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GCNetworkReachability/GCNetworkReachability-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B9F1952CB46F3F03C3EDAB7527491C1F /* Release */ = {
+		B67CE7BBF26C5FE091BACC0A2001075E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B78F2E83E5833BFC58BD9716004C741A /* Pods-iJenkins.release.xcconfig */;
 			buildSettings = {
@@ -678,68 +356,25 @@
 			};
 			name = Release;
 		};
-		FB4E757B3D184B84942BC1170B566EB5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2049BA984F4E85FB6F25AD32E10DA95 /* GCNetworkReachability.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GCNetworkReachability/GCNetworkReachability-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		077785406D7D40C1D1F9E08058BDEE7C /* Build configuration list for PBXNativeTarget "Pods-iJenkins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				103AA6D2C3E6F9F2774C1237FAB30F34 /* Debug */,
+				055916BC7595BF47364175B3F7F3A85E /* Enterprise */,
+				B67CE7BBF26C5FE091BACC0A2001075E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
 				85524242729F40EA9D2610721E3A7EBC /* Enterprise */,
 				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7CB265F9B1A6CBC997BCEAC6BFBD590A /* Build configuration list for PBXNativeTarget "Pods-iJenkins" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9B3A0CE5C339BF3EA3EAD7772B846403 /* Debug */,
-				68940A25A711B7E7696B09298EB55C52 /* Enterprise */,
-				B9F1952CB46F3F03C3EDAB7527491C1F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		96C191F876EFBC8C8B4380DBCD526D29 /* Build configuration list for PBXNativeTarget "GCNetworkReachability" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B3F391F338A3E52D0771FDC01873BA47 /* Debug */,
-				0BF563BAA50ED0A76691960EEEDA52AB /* Enterprise */,
-				FB4E757B3D184B84942BC1170B566EB5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F33CE338B8755D3FF9F7B3185D304F0B /* Build configuration list for PBXNativeTarget "Lockbox" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				697748E3E581C30D0EEB7C400CD0C1EA /* Debug */,
-				3FD4290FDC447E58919C0A8536AF5B6B /* Enterprise */,
-				5042F208FD18D70E0B6AE9B55AA264B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
