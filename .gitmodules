@@ -1,21 +1,3 @@
-[submodule "Thirdparty/Lockbox"]
-	path = Thirdparty/Lockbox
-	url = git@github.com:granoff/Lockbox.git
-[submodule "Thirdparty/GCNetworkReachability"]
-	path = Thirdparty/GCNetworkReachability
-	url = git@github.com:GlennChiu/GCNetworkReachability.git
-[submodule "Thirdparty/ios-fontawesome"]
-	path = Thirdparty/ios-fontawesome
-	url = git@github.com:alexdrone/ios-fontawesome.git
-[submodule "Thirdparty/AFNetworking"]
-	path = Thirdparty/AFNetworking
-	url = git@github.com:AFNetworking/AFNetworking.git
-[submodule "Thirdparty/HTTP-Status-Codes-for-Objective-C"]
-	path = Thirdparty/HTTP-Status-Codes-for-Objective-C
-	url = git@github.com:rafiki270/HTTP-Status-Codes-for-Objective-C.git
 [submodule "Thirdparty/BonjourBuddy-iOS"]
 	path = Thirdparty/BonjourBuddy-iOS
 	url = git@github.com:rafiki270/BonjourBuddy-iOS.git
-[submodule "Thirdparty/LUIFramework"]
-	path = Thirdparty/LUIFramework
-	url = git@github.com:Ridiculous-Innovations/LUI.git

@@ -30,9 +30,6 @@
 		151072D917D0BA3400FD083B /* IJ_health-80plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 151072CF17D0BA3400FD083B /* IJ_health-80plus.png */; };
 		151072DA17D0BA3400FD083B /* IJ_health-80plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 151072D017D0BA3400FD083B /* IJ_health-80plus@2x.png */; };
 		151072DE17D0E17C00FD083B /* FTNoAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 151072DD17D0E17C00FD083B /* FTNoAccountCell.m */; };
-		1510731417D0F82D00FD083B /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 151072FF17D0F82C00FD083B /* FAImageView.m */; };
-		1510731617D0F82D00FD083B /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510730217D0F82D00FD083B /* NSString+FontAwesome.m */; };
-		1510731917D0F82D00FD083B /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510730717D0F82D00FD083B /* UIFont+FontAwesome.m */; };
 		1510732017D0FACC00FD083B /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1510731F17D0FACC00FD083B /* FontAwesome.ttf */; };
 		1510732417D0FEDD00FD083B /* FTAddAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510732317D0FEDD00FD083B /* FTAddAccountViewController.m */; };
 		1510732B17D10EFA00FD083B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1510732617D10EFA00FD083B /* Default-568h@2x.png */; };
@@ -49,7 +46,6 @@
 		1510735517D5E8EE00FD083B /* FTKeychainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510735417D5E8EE00FD083B /* FTKeychainObject.m */; };
 		1510735917D5F3B800FD083B /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510735817D5F3B800FD083B /* XYPieChart.m */; };
 		1510735E17D5F44600FD083B /* FTAccountOverviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510735D17D5F44600FD083B /* FTAccountOverviewCell.m */; };
-		151749C11B2D79EE001A930A /* LUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151749C01B2D79EE001A930A /* LUIFramework.framework */; };
 		153921C717E1F12E00896FC1 /* FTDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 153921C617E1F12E00896FC1 /* FTDownload.m */; };
 		153921D017E207A100896FC1 /* FTJobInfoBuildNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 153921CF17E207A100896FC1 /* FTJobInfoBuildNumberCell.m */; };
 		153921D517E2099D00896FC1 /* FTSmallTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 153921D417E2099D00896FC1 /* FTSmallTextCell.m */; };
@@ -71,7 +67,6 @@
 		1544660117FF47AA00025022 /* UIColor+Jenkins.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544660017FF47AA00025022 /* UIColor+Jenkins.m */; };
 		1544660417FF543000025022 /* NSDate+Formatting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544660317FF543000025022 /* NSDate+Formatting.m */; };
 		154466081801FCEF00025022 /* FTIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 154466071801FCEF00025022 /* FTIconCell.m */; };
-		15446612180300EB00025022 /* FTHTTPCodes.m in Sources */ = {isa = PBXBuildFile; fileRef = 15446611180300EB00025022 /* FTHTTPCodes.m */; };
 		154466151803330A00025022 /* ManageJenkinsTemplate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 154466141803330A00025022 /* ManageJenkinsTemplate.plist */; };
 		1544661B1803380000025022 /* FTManageNodesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544661A1803380000025022 /* FTManageNodesViewController.m */; };
 		1544661E1803381200025022 /* FTManageUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544661D1803381200025022 /* FTManageUsersViewController.m */; };
@@ -85,13 +80,11 @@
 		15446642180425B500025022 /* FTAPIUserDetailDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 15446641180425B500025022 /* FTAPIUserDetailDataObject.m */; };
 		154466471805E61E00025022 /* FTDeleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 154466461805E61E00025022 /* FTDeleteCell.m */; };
 		1544664B1805E84300025022 /* FTValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544664A1805E84300025022 /* FTValueCell.m */; };
-		154466A01806092100025022 /* BonjourBuddy.m in Sources */ = {isa = PBXBuildFile; fileRef = 154466911806092000025022 /* BonjourBuddy.m */; };
 		154466AB1806260700025022 /* NSData+Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 154466AA1806260700025022 /* NSData+Networking.m */; };
 		154466AF180636B900025022 /* FTLoginAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 154466AE180636B900025022 /* FTLoginAlert.m */; };
 		154466B3180651F200025022 /* FTQueueJobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 154466B2180651F200025022 /* FTQueueJobCell.m */; };
 		154466B61806BE8500025022 /* FTAPIPluginManagerDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 154466B51806BE8500025022 /* FTAPIPluginManagerDataObject.m */; };
 		154466BA1806C4C600025022 /* FTPluginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 154466B91806C4C600025022 /* FTPluginCell.m */; };
-		154C9EB41B1B3FB600807481 /* libFlurry_6.5.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 154C9EB31B1B3FB600807481 /* libFlurry_6.5.0.a */; };
 		154C9EBC1B1B780C00807481 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154C9EBB1B1B780C00807481 /* Images.xcassets */; };
 		156EC66D1A6E7018009BB672 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156EC66C1A6E7018009BB672 /* Launch Screen.xib */; };
 		156EC66F1A6E7112009BB672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156EC66E1A6E7112009BB672 /* Assets.xcassets */; };
@@ -126,25 +119,21 @@
 		15D2462F17CFA21100793614 /* UIView+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D2462917CFA21100793614 /* UIView+Effects.m */; };
 		15D2463017CFA21100793614 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D2462B17CFA21100793614 /* UIView+Layout.m */; };
 		15D2463A17CFA62900793614 /* FTUserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D2463917CFA62900793614 /* FTUserDetailViewController.m */; };
-		15D2465E17CFBD8F00793614 /* GCNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D2463E17CFBD8E00793614 /* GCNetworkReachability.m */; };
-		15D2466B17CFBD8F00793614 /* Lockbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D2465B17CFBD8E00793614 /* Lockbox.m */; };
 		15D2467717CFBE3C00793614 /* FTAccountsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D2467617CFBE3C00793614 /* FTAccountsManager.m */; };
 		15D2467B17CFBE5200793614 /* FTAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D2467A17CFBE5200793614 /* FTAccount.m */; };
-		15E1832C17E3325B00CE0DEA /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E182D117E3325A00CE0DEA /* AFHTTPClient.m */; };
-		15E1832D17E3325B00CE0DEA /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E182D317E3325A00CE0DEA /* AFHTTPRequestOperation.m */; };
-		15E1832E17E3325B00CE0DEA /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E182D517E3325A00CE0DEA /* AFImageRequestOperation.m */; };
-		15E1832F17E3325B00CE0DEA /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E182D717E3325A00CE0DEA /* AFJSONRequestOperation.m */; };
-		15E1833017E3325B00CE0DEA /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E182D917E3325A00CE0DEA /* AFNetworkActivityIndicatorManager.m */; };
-		15E1833117E3325B00CE0DEA /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E182DC17E3325A00CE0DEA /* AFPropertyListRequestOperation.m */; };
-		15E1833217E3325B00CE0DEA /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E182DE17E3325A00CE0DEA /* AFURLConnectionOperation.m */; };
-		15E1833317E3325B00CE0DEA /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E182E017E3325A00CE0DEA /* AFXMLRequestOperation.m */; };
-		15E1833417E3325B00CE0DEA /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E182E217E3325A00CE0DEA /* UIImageView+AFNetworking.m */; };
 		15E1836C17E332D600CE0DEA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E1836B17E332D600CE0DEA /* MobileCoreServices.framework */; };
 		15E1837017E3510000CE0DEA /* FTJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E1836F17E3510000CE0DEA /* FTJSONRequestOperation.m */; };
 		15E1838617E3676900CE0DEA /* FTAPIJobBuildDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E1838517E3676900CE0DEA /* FTAPIJobBuildDataObject.m */; };
 		15E1838A17E4CDAD00CE0DEA /* FTViewSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E1838917E4CDAD00CE0DEA /* FTViewSelectorViewController.m */; };
 		15E1838F17E4EC6C00CE0DEA /* FTNoJobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E1838E17E4EC6C00CE0DEA /* FTNoJobCell.m */; };
 		15E1839617E4FFC900CE0DEA /* FTChartOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E1839417E4FFC900CE0DEA /* FTChartOverlay.m */; };
+		69C9A40F43AC2021687BF76B /* libPods-iJenkins.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3B80055E501954102EDB6E /* libPods-iJenkins.a */; };
+		96F848A11F5860F10002AFF3 /* BonjourBuddy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F848A01F5860F10002AFF3 /* BonjourBuddy.m */; };
+		96F848A41F5861270002AFF3 /* FTHTTPCodes.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F848A31F5861270002AFF3 /* FTHTTPCodes.m */; };
+		96F848AD1F58618E0002AFF3 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F848A61F58618E0002AFF3 /* FAImageView.m */; };
+		96F848AE1F58618E0002AFF3 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F848A81F58618E0002AFF3 /* NSString+FontAwesome.m */; };
+		96F848AF1F58618E0002AFF3 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96F848AA1F58618E0002AFF3 /* FontAwesome.ttf */; };
+		96F848B01F58618E0002AFF3 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F848AC1F58618E0002AFF3 /* UIFont+FontAwesome.m */; };
 		A0885E3C180293650000EA51 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0885E3B180293650000EA51 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
@@ -185,12 +174,6 @@
 		151072D017D0BA3400FD083B /* IJ_health-80plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IJ_health-80plus@2x.png"; sourceTree = "<group>"; };
 		151072DC17D0E17C00FD083B /* FTNoAccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNoAccountCell.h; sourceTree = "<group>"; };
 		151072DD17D0E17C00FD083B /* FTNoAccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNoAccountCell.m; sourceTree = "<group>"; };
-		151072FE17D0F82C00FD083B /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
-		151072FF17D0F82C00FD083B /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
-		1510730117D0F82D00FD083B /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
-		1510730217D0F82D00FD083B /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
-		1510730617D0F82D00FD083B /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
-		1510730717D0F82D00FD083B /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
 		1510731F17D0FACC00FD083B /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		1510732217D0FEDD00FD083B /* FTAddAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAddAccountViewController.h; sourceTree = "<group>"; };
 		1510732317D0FEDD00FD083B /* FTAddAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAddAccountViewController.m; sourceTree = "<group>"; };
@@ -257,8 +240,6 @@
 		1544660317FF543000025022 /* NSDate+Formatting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatting.m"; sourceTree = "<group>"; };
 		154466061801FCEF00025022 /* FTIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIconCell.h; sourceTree = "<group>"; };
 		154466071801FCEF00025022 /* FTIconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIconCell.m; sourceTree = "<group>"; };
-		15446610180300EB00025022 /* FTHTTPCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHTTPCodes.h; sourceTree = "<group>"; };
-		15446611180300EB00025022 /* FTHTTPCodes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHTTPCodes.m; sourceTree = "<group>"; };
 		154466141803330A00025022 /* ManageJenkinsTemplate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ManageJenkinsTemplate.plist; sourceTree = "<group>"; };
 		154466191803380000025022 /* FTManageNodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTManageNodesViewController.h; sourceTree = "<group>"; };
 		1544661A1803380000025022 /* FTManageNodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTManageNodesViewController.m; sourceTree = "<group>"; };
@@ -284,8 +265,6 @@
 		154466461805E61E00025022 /* FTDeleteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDeleteCell.m; sourceTree = "<group>"; };
 		154466491805E84300025022 /* FTValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTValueCell.h; sourceTree = "<group>"; };
 		1544664A1805E84300025022 /* FTValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTValueCell.m; sourceTree = "<group>"; };
-		154466901806092000025022 /* BonjourBuddy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonjourBuddy.h; sourceTree = "<group>"; };
-		154466911806092000025022 /* BonjourBuddy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonjourBuddy.m; sourceTree = "<group>"; };
 		154466A91806260700025022 /* NSData+Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Networking.h"; sourceTree = "<group>"; };
 		154466AA1806260700025022 /* NSData+Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Networking.m"; sourceTree = "<group>"; };
 		154466AD180636B900025022 /* FTLoginAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTLoginAlert.h; sourceTree = "<group>"; };
@@ -296,9 +275,6 @@
 		154466B51806BE8500025022 /* FTAPIPluginManagerDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAPIPluginManagerDataObject.m; sourceTree = "<group>"; };
 		154466B81806C4C600025022 /* FTPluginCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPluginCell.h; sourceTree = "<group>"; };
 		154466B91806C4C600025022 /* FTPluginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPluginCell.m; sourceTree = "<group>"; };
-		154C9EB11B1B3FB600807481 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		154C9EB21B1B3FB600807481 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
-		154C9EB31B1B3FB600807481 /* libFlurry_6.5.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.5.0.a; sourceTree = "<group>"; };
 		154C9EBB1B1B780C00807481 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../iJenkins/Images.xcassets; sourceTree = "<group>"; };
 		156EC66C1A6E7018009BB672 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		156EC66E1A6E7112009BB672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -349,33 +325,10 @@
 		15D2462B17CFA21100793614 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		15D2463817CFA62900793614 /* FTUserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUserDetailViewController.h; sourceTree = "<group>"; };
 		15D2463917CFA62900793614 /* FTUserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTUserDetailViewController.m; sourceTree = "<group>"; };
-		15D2463D17CFBD8E00793614 /* GCNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCNetworkReachability.h; sourceTree = "<group>"; };
-		15D2463E17CFBD8E00793614 /* GCNetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCNetworkReachability.m; sourceTree = "<group>"; };
-		15D2465A17CFBD8E00793614 /* Lockbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lockbox.h; sourceTree = "<group>"; };
-		15D2465B17CFBD8E00793614 /* Lockbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lockbox.m; sourceTree = "<group>"; };
 		15D2467517CFBE3C00793614 /* FTAccountsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAccountsManager.h; sourceTree = "<group>"; };
 		15D2467617CFBE3C00793614 /* FTAccountsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAccountsManager.m; sourceTree = "<group>"; };
 		15D2467917CFBE5200793614 /* FTAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAccount.h; sourceTree = "<group>"; };
 		15D2467A17CFBE5200793614 /* FTAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAccount.m; sourceTree = "<group>"; };
-		15E182D017E3325A00CE0DEA /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
-		15E182D117E3325A00CE0DEA /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
-		15E182D217E3325A00CE0DEA /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		15E182D317E3325A00CE0DEA /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		15E182D417E3325A00CE0DEA /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFImageRequestOperation.h; sourceTree = "<group>"; };
-		15E182D517E3325A00CE0DEA /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFImageRequestOperation.m; sourceTree = "<group>"; };
-		15E182D617E3325A00CE0DEA /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFJSONRequestOperation.h; sourceTree = "<group>"; };
-		15E182D717E3325A00CE0DEA /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFJSONRequestOperation.m; sourceTree = "<group>"; };
-		15E182D817E3325A00CE0DEA /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		15E182D917E3325A00CE0DEA /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		15E182DA17E3325A00CE0DEA /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		15E182DB17E3325A00CE0DEA /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
-		15E182DC17E3325A00CE0DEA /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
-		15E182DD17E3325A00CE0DEA /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		15E182DE17E3325A00CE0DEA /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		15E182DF17E3325A00CE0DEA /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFXMLRequestOperation.h; sourceTree = "<group>"; };
-		15E182E017E3325A00CE0DEA /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
-		15E182E117E3325A00CE0DEA /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		15E182E217E3325A00CE0DEA /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		15E1836B17E332D600CE0DEA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		15E1836E17E3510000CE0DEA /* FTJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTJSONRequestOperation.h; sourceTree = "<group>"; };
 		15E1836F17E3510000CE0DEA /* FTJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTJSONRequestOperation.m; sourceTree = "<group>"; };
@@ -387,7 +340,22 @@
 		15E1838E17E4EC6C00CE0DEA /* FTNoJobCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNoJobCell.m; sourceTree = "<group>"; };
 		15E1839317E4FFC900CE0DEA /* FTChartOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTChartOverlay.h; sourceTree = "<group>"; };
 		15E1839417E4FFC900CE0DEA /* FTChartOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTChartOverlay.m; sourceTree = "<group>"; };
+		96F8489F1F5860F10002AFF3 /* BonjourBuddy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonjourBuddy.h; sourceTree = "<group>"; };
+		96F848A01F5860F10002AFF3 /* BonjourBuddy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonjourBuddy.m; sourceTree = "<group>"; };
+		96F848A21F5861270002AFF3 /* FTHTTPCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTHTTPCodes.h; sourceTree = "<group>"; };
+		96F848A31F5861270002AFF3 /* FTHTTPCodes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHTTPCodes.m; sourceTree = "<group>"; };
+		96F848A51F58618E0002AFF3 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
+		96F848A61F58618E0002AFF3 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
+		96F848A71F58618E0002AFF3 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		96F848A81F58618E0002AFF3 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		96F848AA1F58618E0002AFF3 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		96F848AB1F58618E0002AFF3 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		96F848AC1F58618E0002AFF3 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
 		A0885E3B180293650000EA51 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Thirdparty/Crashlytics.framework; sourceTree = "<group>"; };
+		A96D3CE2E3753724061FEC80 /* Pods-iJenkins.enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iJenkins.enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-iJenkins/Pods-iJenkins.enterprise.xcconfig"; sourceTree = "<group>"; };
+		CB17610BC3D03BBBDA221212 /* Pods-iJenkins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iJenkins.release.xcconfig"; path = "Pods/Target Support Files/Pods-iJenkins/Pods-iJenkins.release.xcconfig"; sourceTree = "<group>"; };
+		CE3B80055E501954102EDB6E /* libPods-iJenkins.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iJenkins.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06EA7352F18E8656CB4A9EA /* Pods-iJenkins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iJenkins.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iJenkins/Pods-iJenkins.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,11 +367,9 @@
 				15BF186F1B14CE55001B44E6 /* CoreTelephony.framework in Frameworks */,
 				15E1836C17E332D600CE0DEA /* MobileCoreServices.framework in Frameworks */,
 				15D2461917CFA1B600793614 /* CoreText.framework in Frameworks */,
-				151749C11B2D79EE001A930A /* LUIFramework.framework in Frameworks */,
 				15D2461A17CFA1B600793614 /* MessageUI.framework in Frameworks */,
 				15D2461B17CFA1B600793614 /* QuartzCore.framework in Frameworks */,
 				15BF18641B14C92F001B44E6 /* libz.dylib in Frameworks */,
-				154C9EB41B1B3FB600807481 /* libFlurry_6.5.0.a in Frameworks */,
 				15D2461C17CFA1B600793614 /* Security.framework in Frameworks */,
 				15D2461D17CFA1B600793614 /* Social.framework in Frameworks */,
 				15BF18651B14C92F001B44E6 /* Fabric.framework in Frameworks */,
@@ -413,6 +379,7 @@
 				15D245D817CF9C2A00793614 /* CoreGraphics.framework in Frameworks */,
 				15BF18631B14C92F001B44E6 /* libc++.dylib in Frameworks */,
 				A0885E3C180293650000EA51 /* Crashlytics.framework in Frameworks */,
+				69C9A40F43AC2021687BF76B /* libPods-iJenkins.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,19 +521,6 @@
 				1510731F17D0FACC00FD083B /* FontAwesome.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		151072E617D0F82C00FD083B /* ios-fontawesome */ = {
-			isa = PBXGroup;
-			children = (
-				151072FE17D0F82C00FD083B /* FAImageView.h */,
-				151072FF17D0F82C00FD083B /* FAImageView.m */,
-				1510730117D0F82D00FD083B /* NSString+FontAwesome.h */,
-				1510730217D0F82D00FD083B /* NSString+FontAwesome.m */,
-				1510730617D0F82D00FD083B /* UIFont+FontAwesome.h */,
-				1510730717D0F82D00FD083B /* UIFont+FontAwesome.m */,
-			);
-			path = "ios-fontawesome";
 			sourceTree = "<group>";
 		};
 		1510732117D0FEC200FD083B /* Add account */ = {
@@ -879,15 +833,6 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
-		15446609180300C400025022 /* HTTP-Status-Codes-for-Objective-C */ = {
-			isa = PBXGroup;
-			children = (
-				15446610180300EB00025022 /* FTHTTPCodes.h */,
-				15446611180300EB00025022 /* FTHTTPCodes.m */,
-			);
-			path = "HTTP-Status-Codes-for-Objective-C";
-			sourceTree = "<group>";
-		};
 		15446613180332E100025022 /* Management */ = {
 			isa = PBXGroup;
 			children = (
@@ -1039,15 +984,6 @@
 			name = Plugins;
 			sourceTree = "<group>";
 		};
-		1544668E1806092000025022 /* BonjourBuddy-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				154466901806092000025022 /* BonjourBuddy.h */,
-				154466911806092000025022 /* BonjourBuddy.m */,
-			);
-			path = "BonjourBuddy-iOS";
-			sourceTree = "<group>";
-		};
 		154466AC180636A100025022 /* Login alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -1075,16 +1011,6 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
-		154C9EB01B1B3FB600807481 /* Flurry */ = {
-			isa = PBXGroup;
-			children = (
-				154C9EB11B1B3FB600807481 /* Flurry.h */,
-				154C9EB21B1B3FB600807481 /* FlurryWatch.h */,
-				154C9EB31B1B3FB600807481 /* libFlurry_6.5.0.a */,
-			);
-			path = Flurry;
-			sourceTree = "<group>";
-		};
 		15BF18701B14CFA1001B44E6 /* LiveUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -1110,6 +1036,7 @@
 				15D245DA17CF9C2A00793614 /* Supporting Files */,
 				15D245D217CF9C2A00793614 /* Frameworks */,
 				15D245D117CF9C2A00793614 /* Products */,
+				C0F2E8E4DDB0AC2CFD2E0EFC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1141,6 +1068,7 @@
 				15D245D317CF9C2A00793614 /* UIKit.framework */,
 				15D245D517CF9C2A00793614 /* Foundation.framework */,
 				15D245D717CF9C2A00793614 /* CoreGraphics.framework */,
+				CE3B80055E501954102EDB6E /* libPods-iJenkins.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1243,6 +1171,17 @@
 		15D2460917CF9F8C00793614 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				96F848A51F58618E0002AFF3 /* FAImageView.h */,
+				96F848A61F58618E0002AFF3 /* FAImageView.m */,
+				96F848A71F58618E0002AFF3 /* NSString+FontAwesome.h */,
+				96F848A81F58618E0002AFF3 /* NSString+FontAwesome.m */,
+				96F848A91F58618E0002AFF3 /* Resources */,
+				96F848AB1F58618E0002AFF3 /* UIFont+FontAwesome.h */,
+				96F848AC1F58618E0002AFF3 /* UIFont+FontAwesome.m */,
+				96F848A21F5861270002AFF3 /* FTHTTPCodes.h */,
+				96F848A31F5861270002AFF3 /* FTHTTPCodes.m */,
+				96F8489F1F5860F10002AFF3 /* BonjourBuddy.h */,
+				96F848A01F5860F10002AFF3 /* BonjourBuddy.m */,
 				154466AC180636A100025022 /* Login alert */,
 				153921C417E1F12100896FC1 /* Download */,
 				1510735217D5E8D500FD083B /* Keychain */,
@@ -1339,35 +1278,10 @@
 		15D2463B17CFBD8E00793614 /* Thirdparty */ = {
 			isa = PBXGroup;
 			children = (
-				154C9EB01B1B3FB600807481 /* Flurry */,
-				1544668E1806092000025022 /* BonjourBuddy-iOS */,
-				15446609180300C400025022 /* HTTP-Status-Codes-for-Objective-C */,
-				15E182CC17E3325A00CE0DEA /* AFNetworking */,
 				1510735617D5F3B800FD083B /* XYPieChart */,
-				151072E617D0F82C00FD083B /* ios-fontawesome */,
-				15D2463C17CFBD8E00793614 /* GCNetworkReachability */,
-				15D2464017CFBD8E00793614 /* Lockbox */,
 			);
 			path = Thirdparty;
 			sourceTree = SOURCE_ROOT;
-		};
-		15D2463C17CFBD8E00793614 /* GCNetworkReachability */ = {
-			isa = PBXGroup;
-			children = (
-				15D2463D17CFBD8E00793614 /* GCNetworkReachability.h */,
-				15D2463E17CFBD8E00793614 /* GCNetworkReachability.m */,
-			);
-			path = GCNetworkReachability;
-			sourceTree = "<group>";
-		};
-		15D2464017CFBD8E00793614 /* Lockbox */ = {
-			isa = PBXGroup;
-			children = (
-				15D2465A17CFBD8E00793614 /* Lockbox.h */,
-				15D2465B17CFBD8E00793614 /* Lockbox.m */,
-			);
-			path = Lockbox;
-			sourceTree = "<group>";
 		};
 		15D2467417CFBE1200793614 /* Local */ = {
 			isa = PBXGroup;
@@ -1397,32 +1311,6 @@
 				1510729117D00C0100FD083B /* List */,
 			);
 			name = Jobs;
-			sourceTree = "<group>";
-		};
-		15E182CC17E3325A00CE0DEA /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				15E182D017E3325A00CE0DEA /* AFHTTPClient.h */,
-				15E182D117E3325A00CE0DEA /* AFHTTPClient.m */,
-				15E182D217E3325A00CE0DEA /* AFHTTPRequestOperation.h */,
-				15E182D317E3325A00CE0DEA /* AFHTTPRequestOperation.m */,
-				15E182D417E3325A00CE0DEA /* AFImageRequestOperation.h */,
-				15E182D517E3325A00CE0DEA /* AFImageRequestOperation.m */,
-				15E182D617E3325A00CE0DEA /* AFJSONRequestOperation.h */,
-				15E182D717E3325A00CE0DEA /* AFJSONRequestOperation.m */,
-				15E182D817E3325A00CE0DEA /* AFNetworkActivityIndicatorManager.h */,
-				15E182D917E3325A00CE0DEA /* AFNetworkActivityIndicatorManager.m */,
-				15E182DA17E3325A00CE0DEA /* AFNetworking.h */,
-				15E182DB17E3325A00CE0DEA /* AFPropertyListRequestOperation.h */,
-				15E182DC17E3325A00CE0DEA /* AFPropertyListRequestOperation.m */,
-				15E182DD17E3325A00CE0DEA /* AFURLConnectionOperation.h */,
-				15E182DE17E3325A00CE0DEA /* AFURLConnectionOperation.m */,
-				15E182DF17E3325A00CE0DEA /* AFXMLRequestOperation.h */,
-				15E182E017E3325A00CE0DEA /* AFXMLRequestOperation.m */,
-				15E182E117E3325A00CE0DEA /* UIImageView+AFNetworking.h */,
-				15E182E217E3325A00CE0DEA /* UIImageView+AFNetworking.m */,
-			);
-			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 		15E1836D17E350D100CE0DEA /* Operation */ = {
@@ -1472,6 +1360,24 @@
 			name = Chart;
 			sourceTree = "<group>";
 		};
+		96F848A91F58618E0002AFF3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96F848AA1F58618E0002AFF3 /* FontAwesome.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C0F2E8E4DDB0AC2CFD2E0EFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F06EA7352F18E8656CB4A9EA /* Pods-iJenkins.debug.xcconfig */,
+				CB17610BC3D03BBBDA221212 /* Pods-iJenkins.release.xcconfig */,
+				A96D3CE2E3753724061FEC80 /* Pods-iJenkins.enterprise.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1479,10 +1385,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15D245F317CF9C2A00793614 /* Build configuration list for PBXNativeTarget "iJenkins" */;
 			buildPhases = (
+				EDA6ED5D34AB8842FEFE2DFE /* [CP] Check Pods Manifest.lock */,
 				15D245CC17CF9C2A00793614 /* Sources */,
 				15D245CD17CF9C2A00793614 /* Frameworks */,
 				15D245CE17CF9C2A00793614 /* Resources */,
 				151DA1BF17FC326800B253DE /* ShellScript */,
+				0C923377BEFF10916BA672A5 /* [CP] Embed Pods Frameworks */,
+				3ED4FBF9CA2F21E4E429C3E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1546,6 +1455,7 @@
 				151072D217D0BA3400FD083B /* IJ_health-00to19@2x.png in Resources */,
 				151072D417D0BA3400FD083B /* IJ_health-20to39@2x.png in Resources */,
 				15BF18781B14D178001B44E6 /* LUITranslations.json in Resources */,
+				96F848AF1F58618E0002AFF3 /* FontAwesome.ttf in Resources */,
 				151072DA17D0BA3400FD083B /* IJ_health-80plus@2x.png in Resources */,
 				1510732B17D10EFA00FD083B /* Default-568h@2x.png in Resources */,
 				15D245DE17CF9C2A00793614 /* InfoPlist.strings in Resources */,
@@ -1564,6 +1474,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C923377BEFF10916BA672A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iJenkins/Pods-iJenkins-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		151DA1BF17FC326800B253DE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1575,7 +1500,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Thirdparty/Crashlytics.framework/run 645cad88976887e985fc9e2d08345ca9cc583918";
+			shellScript = "#./Thirdparty/Crashlytics.framework/run 645cad88976887e985fc9e2d08345ca9cc583918";
+		};
+		3ED4FBF9CA2F21E4E429C3E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iJenkins/Pods-iJenkins-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA6ED5D34AB8842FEFE2DFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1584,7 +1539,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1510731417D0F82D00FD083B /* FAImageView.m in Sources */,
 				1510735117D518E000FD083B /* FTAccountCell.m in Sources */,
 				15D245E017CF9C2A00793614 /* main.m in Sources */,
 				1544661B1803380000025022 /* FTManageNodesViewController.m in Sources */,
@@ -1592,20 +1546,21 @@
 				1510734C17D4FAF000FD083B /* FTLoadingCell.m in Sources */,
 				1510728317CFEA6F00FD083B /* FTAPIDataObject.m in Sources */,
 				15D245E417CF9C2A00793614 /* FTAppDelegate.m in Sources */,
-				15E1832E17E3325B00CE0DEA /* AFImageRequestOperation.m in Sources */,
 				154466B3180651F200025022 /* FTQueueJobCell.m in Sources */,
 				15D245ED17CF9C2A00793614 /* FTViewController.m in Sources */,
 				153921D917E2155A00896FC1 /* FTJobHealthInfoCell.m in Sources */,
 				153921E617E2700400896FC1 /* FTBuildDetailViewController.m in Sources */,
 				1510729017D0053200FD083B /* FTAPIJobDataObject.m in Sources */,
 				1510735E17D5F44600FD083B /* FTAccountOverviewCell.m in Sources */,
-				15E1833017E3325B00CE0DEA /* AFNetworkActivityIndicatorManager.m in Sources */,
 				154465DF17FE137400025022 /* FTAPIOverallLoadDataObject.m in Sources */,
 				153921C717E1F12E00896FC1 /* FTDownload.m in Sources */,
+				96F848A11F5860F10002AFF3 /* BonjourBuddy.m in Sources */,
 				15D245FC17CF9D9900793614 /* FTServerHomeViewController.m in Sources */,
 				153921DD17E21C8D00896FC1 /* FTLastBuildInfoCell.m in Sources */,
 				154466251803386700025022 /* FTManageViewController.m in Sources */,
 				15E1838A17E4CDAD00CE0DEA /* FTViewSelectorViewController.m in Sources */,
+				96F848B01F58618E0002AFF3 /* UIFont+FontAwesome.m in Sources */,
+				96F848AD1F58618E0002AFF3 /* FAImageView.m in Sources */,
 				154465E217FE161700025022 /* FTAPIBuildQueueDataObject.m in Sources */,
 				15D2460317CF9DBB00793614 /* FTAccountsViewController.m in Sources */,
 				1510735517D5E8EE00FD083B /* FTKeychainObject.m in Sources */,
@@ -1613,7 +1568,6 @@
 				153921E217E22D0600896FC1 /* FTAPIBuildDetailDataObject.m in Sources */,
 				1510732417D0FEDD00FD083B /* FTAddAccountViewController.m in Sources */,
 				154466B61806BE8500025022 /* FTAPIPluginManagerDataObject.m in Sources */,
-				154466A01806092100025022 /* BonjourBuddy.m in Sources */,
 				1544663918041B9A00025022 /* NSString+Conversions.m in Sources */,
 				15D2460E17CF9FB800793614 /* FTNoInternetConnectionViewController.m in Sources */,
 				1510728A17CFEBFA00FD083B /* NSString+URLTools.m in Sources */,
@@ -1625,16 +1579,13 @@
 				151072C217D0A55600FD083B /* NSData+Base64.m in Sources */,
 				154466BA1806C4C600025022 /* FTPluginCell.m in Sources */,
 				1510728017CFEA6300FD083B /* FTAPIConnector.m in Sources */,
-				1510731617D0F82D00FD083B /* NSString+FontAwesome.m in Sources */,
 				153921D517E2099D00896FC1 /* FTSmallTextCell.m in Sources */,
 				15D2462C17CFA21100793614 /* UIImage+Tools.m in Sources */,
-				15E1833417E3325B00CE0DEA /* UIImageView+AFNetworking.m in Sources */,
 				151072DE17D0E17C00FD083B /* FTNoAccountCell.m in Sources */,
+				96F848A41F5861270002AFF3 /* FTHTTPCodes.m in Sources */,
 				1544661E1803381200025022 /* FTManageUsersViewController.m in Sources */,
 				1510729A17D00F6300FD083B /* FTJobCell.m in Sources */,
 				151072A417D084FC00FD083B /* FTLabel.m in Sources */,
-				15E1833217E3325B00CE0DEA /* AFURLConnectionOperation.m in Sources */,
-				15E1832F17E3325B00CE0DEA /* AFJSONRequestOperation.m in Sources */,
 				1510729E17D084D800FD083B /* FTView.m in Sources */,
 				15D2462D17CFA21100793614 /* UIColor+Tools.m in Sources */,
 				1544660117FF47AA00025022 /* UIColor+Jenkins.m in Sources */,
@@ -1652,28 +1603,21 @@
 				15E1837017E3510000CE0DEA /* FTJSONRequestOperation.m in Sources */,
 				15D2463A17CFA62900793614 /* FTUserDetailViewController.m in Sources */,
 				154466341804021500025022 /* FTNodeCell.m in Sources */,
+				96F848AE1F58618E0002AFF3 /* NSString+FontAwesome.m in Sources */,
 				153921D017E207A100896FC1 /* FTJobInfoBuildNumberCell.m in Sources */,
-				15E1833117E3325B00CE0DEA /* AFPropertyListRequestOperation.m in Sources */,
 				154465FE17FF228300025022 /* FTBuildInfoCell.m in Sources */,
 				1544662B18033D0900025022 /* FTBuildQueueViewController.m in Sources */,
-				1510731917D0F82D00FD083B /* UIFont+FontAwesome.m in Sources */,
-				15E1832D17E3325B00CE0DEA /* AFHTTPRequestOperation.m in Sources */,
 				154466211803382A00025022 /* FTManagePluginsViewController.m in Sources */,
 				1510735917D5F3B800FD083B /* XYPieChart.m in Sources */,
 				154465F017FE33EA00025022 /* FTLogViewController.m in Sources */,
-				15E1832C17E3325B00CE0DEA /* AFHTTPClient.m in Sources */,
 				1544660417FF543000025022 /* NSDate+Formatting.m in Sources */,
 				1510728D17CFED4700FD083B /* FTAPIServerDataObject.m in Sources */,
-				15D2465E17CFBD8F00793614 /* GCNetworkReachability.m in Sources */,
 				1510733617D20F8500FD083B /* FTBasicAccountCell.m in Sources */,
 				154466AF180636B900025022 /* FTLoginAlert.m in Sources */,
-				15D2466B17CFBD8F00793614 /* Lockbox.m in Sources */,
-				15446612180300EB00025022 /* FTHTTPCodes.m in Sources */,
 				1544664B1805E84300025022 /* FTValueCell.m in Sources */,
 				15E1838617E3676900CE0DEA /* FTAPIJobBuildDataObject.m in Sources */,
 				154466081801FCEF00025022 /* FTIconCell.m in Sources */,
 				15D2467717CFBE3C00793614 /* FTAccountsManager.m in Sources */,
-				15E1833317E3325B00CE0DEA /* AFXMLRequestOperation.m in Sources */,
 				151072A817D0851D00FD083B /* FTBasicCell.m in Sources */,
 				15D2467B17CFBE5200793614 /* FTAccount.m in Sources */,
 				154465F317FE340A00025022 /* FTBuildDetailChangesViewController.m in Sources */,
@@ -1723,6 +1667,7 @@
 		};
 		1510727D17CFE94E00FD083B /* Enterprise */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A96D3CE2E3753724061FEC80 /* Pods-iJenkins.enterprise.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1732,7 +1677,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Thirdparty\"",
 					"$(PROJECT_DIR)/Thirdparty",
-					"$(PROJECT_DIR)/Thirdparty/LUIFramework/iOS/Latest",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iJenkins/iJenkins-Prefix.pch";
@@ -1741,11 +1685,10 @@
 					"\"$(SRCROOT)/Thirdparty/Crashlytics.framework/**\"",
 				);
 				INFOPLIST_FILE = "iJenkins/iJenkins-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Thirdparty/Flurry",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -1816,6 +1759,7 @@
 		};
 		15D245F417CF9C2A00793614 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F06EA7352F18E8656CB4A9EA /* Pods-iJenkins.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1825,7 +1769,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Thirdparty\"",
 					"$(PROJECT_DIR)/Thirdparty",
-					"$(PROJECT_DIR)/Thirdparty/LUIFramework/iOS/Latest",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iJenkins/iJenkins-Prefix.pch";
@@ -1834,11 +1777,10 @@
 					"\"$(SRCROOT)/Thirdparty/Crashlytics.framework/**\"",
 				);
 				INFOPLIST_FILE = "iJenkins/iJenkins-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Thirdparty/Flurry",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -1853,6 +1795,7 @@
 		};
 		15D245F517CF9C2A00793614 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB17610BC3D03BBBDA221212 /* Pods-iJenkins.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1862,7 +1805,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Thirdparty\"",
 					"$(PROJECT_DIR)/Thirdparty",
-					"$(PROJECT_DIR)/Thirdparty/LUIFramework/iOS/Latest",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iJenkins/iJenkins-Prefix.pch";
@@ -1871,11 +1813,10 @@
 					"\"$(SRCROOT)/Thirdparty/Crashlytics.framework/**\"",
 				);
 				INFOPLIST_FILE = "iJenkins/iJenkins-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Thirdparty/Flurry",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",

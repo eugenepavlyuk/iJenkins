@@ -7,7 +7,7 @@
 //
 
 #import "FTAccountsViewController.h"
-#import <LUIFramework/LUIFramework.h>
+//#import <LUIFramework/LUIFramework.h>
 #import "FTServerHomeViewController.h"
 #import "FTNoAccountCell.h"
 #import "FTAccountCell.h"
@@ -90,7 +90,7 @@
     _demoAccounts = [[FTAccountsManager sharedManager] demoAccounts];
     
     [super createTableView];
-    [self.tableView registerForReloadDataOnTranslationChange];
+    //[self.tableView registerForReloadDataOnTranslationChange];
 }
 
 - (void)createTopButtons {
@@ -98,7 +98,7 @@
     [self.navigationItem setLeftBarButtonItem:add];
     
     UIBarButtonItem *edit = [[UIBarButtonItem alloc] initWithTitle:FTLangGet(@"Edit") style:UIBarButtonItemStylePlain target:self action:@selector(didCLickEditItem:)];
-    [edit registerTitleWithTranslationKey:@"Edit"];
+    //[edit registerTitleWithTranslationKey:@"Edit"];
     [self.navigationItem setRightBarButtonItem:edit];
 }
 
@@ -111,7 +111,7 @@
     
     UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     UIBarButtonItem *langs = [[UIBarButtonItem alloc] initWithTitle:FTLangGet(@"Language") style:UIBarButtonItemStylePlain target:self action:@selector(changeLanguage:)];
-    [langs registerTitleWithTranslationKey:@"Language"];
+    //[langs registerTitleWithTranslationKey:@"Language"];
     [_bottomToolbar setItems:@[space, langs]];
     
     [self.view addSubview:_bottomToolbar];
@@ -129,7 +129,7 @@
     [self createBottomToolbar];
     
     [self setTitle:FTLangGet(@"Servers")];
-    [self registerTitleWithTranslationKey:@"Servers"];
+    //[self registerTitleWithTranslationKey:@"Servers"];
     
     [self startCheckingForJenkins];
 }
@@ -158,8 +158,8 @@
 #pragma mark Actions
 
 - (void)changeLanguage:(UIBarButtonItem *)sender {
-    LUILanguageSelectorViewController *c = [[LUILanguageSelectorViewController alloc] init];
-    [self presentViewController:c animated:YES completion:nil];
+//    LUILanguageSelectorViewController *c = [[LUILanguageSelectorViewController alloc] init];
+//    [self presentViewController:c animated:YES completion:nil];
 }
 
 - (void)didCLickAddItem:(UIBarButtonItem *)sender {
