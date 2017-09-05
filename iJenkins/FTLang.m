@@ -7,15 +7,11 @@
 //
 
 #import "FTLang.h"
-//#import <LUIFramework/LUIFramework.h>
-
 
 @implementation FTLang
 
 + (NSString *)get:(NSString *)key {
-    //return LUITranslate(key);
-    return @"";
+    return NSLocalizedString(key, @"");
 }
-
 
 @end

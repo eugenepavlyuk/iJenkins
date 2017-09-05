@@ -48,7 +48,7 @@
 
 - (void)setCellData:(NSDictionary *)cellData {
     [super setCellData:cellData];
-    //[_textField setPlaceholder:LUITranslate([cellData objectForKey:@"placeholder"])];
+    [_textField setPlaceholder:NSLocalizedString([cellData objectForKey:@"placeholder"], @"")];
     
     [self resetTextFieldToDefault];
     

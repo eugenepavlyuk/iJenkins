@@ -7,7 +7,6 @@
 //
 
 #import "FTAccountsViewController.h"
-//#import <LUIFramework/LUIFramework.h>
 #import "FTServerHomeViewController.h"
 #import "FTNoAccountCell.h"
 #import "FTAccountCell.h"
@@ -28,8 +27,6 @@
 
 @property (nonatomic, strong) BonjourBuddy *bonjour;
 @property (nonatomic, strong) NSArray *bonjourAccounts;
-
-@property (nonatomic, readonly) UIToolbar *bottomToolbar;
 
 @end
 
@@ -102,31 +99,11 @@
     [self.navigationItem setRightBarButtonItem:edit];
 }
 
-- (void)createBottomToolbar {
-    CGRect r = self.view.frame;
-    r.origin.y = (r.size.height - 44);
-    r.size.height = 44;
-    _bottomToolbar = [[UIToolbar alloc] initWithFrame:r];
-    [_bottomToolbar setAutoresizingMask:UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth];
-    
-    UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    UIBarButtonItem *langs = [[UIBarButtonItem alloc] initWithTitle:FTLangGet(@"Language") style:UIBarButtonItemStylePlain target:self action:@selector(changeLanguage:)];
-    //[langs registerTitleWithTranslationKey:@"Language"];
-    [_bottomToolbar setItems:@[space, langs]];
-    
-    [self.view addSubview:_bottomToolbar];
-    
-    r = self.tableView.frame;
-    r.size.height -= 44;
-    [self.tableView setFrame:r];
-}
-
 - (void)createAllElements {
     [super createAllElements];
     
     [self createTableView];
     [self createTopButtons];
-    [self createBottomToolbar];
     
     [self setTitle:FTLangGet(@"Servers")];
     //[self registerTitleWithTranslationKey:@"Servers"];
@@ -156,11 +133,6 @@
 }
 
 #pragma mark Actions
-
-- (void)changeLanguage:(UIBarButtonItem *)sender {
-//    LUILanguageSelectorViewController *c = [[LUILanguageSelectorViewController alloc] init];
-//    [self presentViewController:c animated:YES completion:nil];
-}
 
 - (void)didCLickAddItem:(UIBarButtonItem *)sender {
     FTAddAccountViewController *c = [[FTAddAccountViewController alloc] init];
@@ -255,7 +227,7 @@
 #pragma mark Table view delegate and data source methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -270,10 +242,6 @@
             
         case 2:
             return _demoAccounts.count;
-            break;
-            
-        case 3:
-            return 2;
             break;
             
         default:
@@ -303,10 +271,6 @@
             
         case 2:
             return FTLangGet(@"Demo account");
-            break;
-            
-        case 3:
-            return FTLangGet(@"About");
             break;
             
         default:
@@ -426,26 +390,6 @@
     return cell;
 }
 
-- (FTBasicCell *)cellForAboutSection:(NSIndexPath *)indexPath {
-    static NSString *identifier = @"aboutSectionCell";
-    FTIconCell *cell = [super.tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell) {
-        cell = [[FTIconCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
-        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
-    }
-    if (indexPath.row == 0) {
-        [cell.iconView setDefaultIconIdentifier:@"icon-github"];
-        [cell.textLabel setText:FTLangGet(@"Open source project")];
-        [cell.detailTextLabel setText:FTLangGet(@"All source code available on github.com")];
-    }
-    else {
-        [cell.iconView setDefaultIconIdentifier:@"icon-terminal"];
-        [cell.textLabel setText:FTLangGet(@"SSH Automator")];
-        [cell.detailTextLabel setText:FTLangGet(@"Mobilise your SSH tasks and deployments")];
-    }
-    return cell;
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0 && _data.count == 0) {
         return [self cellForNoAccount];
@@ -462,9 +406,8 @@
         if (indexPath.section == 0 || indexPath.section == 2) {
             return [self accountCellForIndexPath:indexPath];
         }
-        else {
-            return [self cellForAboutSection:indexPath];
-        }
+        
+        return nil;
     }
 }
 

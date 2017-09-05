@@ -8,7 +8,6 @@
 
 #import "FTAppDelegate.h"
 #import <Crashlytics/Crashlytics.h>
-//#import <LUIFramework/LUIFramework.h>
 #import "FTAccountsViewController.h"
 
 @implementation FTAppDelegate
