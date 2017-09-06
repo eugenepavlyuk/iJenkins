@@ -97,9 +97,28 @@ static FTAccountsManager *staticManager = nil;
             [a setAccountType:FTAccountTypeKeychain];
             [arr addObject:a];
         }
+        
+        if ([arr count] == 0) {
+            [arr addObject:[self vsAccount]];
+        }
+        
         accounts = arr;
         return arr;
     }
+}
+
+- (FTAccount *)vsAccount {
+    FTAccount *jenkins = [[FTAccount alloc] init];
+    [jenkins setAccountType:FTAccountTypeDemo];
+    [jenkins setName:FTLangGet(@"Jenkins VS")];
+    [jenkins setHost:@"jm.virtual-solution.de"];
+    [jenkins setPort:443];
+    [jenkins setUsername:nil];
+    [jenkins setPasswordOrToken:nil];
+    [jenkins setLoadMaxItems:8];
+    [jenkins setTimeout:15];
+    [jenkins setHttps:YES];
+    return jenkins;
 }
 
 - (NSArray *)demoAccounts {

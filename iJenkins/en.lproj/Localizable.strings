@@ -17,8 +17,10 @@
 "Result"="Result";
 "Build log"="Build log";
 "Changes"="Changes";
+"Artifacts"="Artifacts";
 "Build info"="Build info";
 "Details"="Details";
+"Artifacts"="Artifacts";
 "Up"="Up";
 "Down"="Down";
 "day"="day";
@@ -62,8 +64,6 @@
 "Open in browser"="Open in browser";
 "No instances available at the moment"="No instances available at the moment";
 "Your accounts"="Your accounts";
-"Local network"="Local network";
-"Demo account"="Demo account";
 "geeky_boy01"="jenkins_boy01";
 "You don't have any Jenkins instances in the list as yet. Please click here to add a new Jenkins instance"="You don't have any Jenkins instances in the list as yet. Please click here to add a new Jenkins instance";
 "Close"="Close";

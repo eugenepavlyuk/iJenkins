@@ -15,7 +15,6 @@ typedef NS_ENUM(NSInteger, FTAccountType) {
     FTAccountTypeDemo
 };
 
-
 @interface FTAccount : NSObject
 
 @property (nonatomic) FTAccountType accountType;

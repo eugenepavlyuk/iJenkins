@@ -27,13 +27,8 @@ typedef NS_ENUM(NSUInteger, FTBuildDetailControllerIndex) {
     FTBuildDetailControllerIndexChanges,
     FTBuildDetailControllerIndexBuiltOn,
     FTBuildDetailControllerIndexExecutor,
+    FTBuildDetailControllerIndexArtifacts
 };
-
-
-@interface FTBuildDetailViewController ()
-
-@end
-
 
 @implementation FTBuildDetailViewController
 
@@ -49,7 +44,7 @@ typedef NS_ENUM(NSUInteger, FTBuildDetailControllerIndex) {
 #pragma mark Table view delegate & data source methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -69,6 +64,10 @@ typedef NS_ENUM(NSUInteger, FTBuildDetailControllerIndex) {
             return 2;
             break;
             
+        case 2:
+            return [_build.buildDetail.artifacts count];
+            break;
+            
         default:
             return 0;
             break;
@@ -76,7 +75,13 @@ typedef NS_ENUM(NSUInteger, FTBuildDetailControllerIndex) {
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return FTLangGet((section == 0) ? @"Build info" : @"Details");
+    if (section == 0) {
+        return FTLangGet(@"Build info");
+    } else if (section == 1) {
+        return FTLangGet(@"Details");
+    } else {
+        return FTLangGet(@"Artifacts");
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -90,9 +95,6 @@ typedef NS_ENUM(NSUInteger, FTBuildDetailControllerIndex) {
     }
     
     FTBuildDetailControllerIndex index = [self indexForIndexPath:indexPath];
-    
-    cell.textLabel.text = [self titleForIndex:index];
-    cell.detailTextLabel.text = [self detailForIndex:index];
     
     BOOL canOpenCell = (indexPath.section == 1);
     if (canOpenCell) {
@@ -111,6 +113,16 @@ typedef NS_ENUM(NSUInteger, FTBuildDetailControllerIndex) {
         }
     }
     cell.accessoryType = (canOpenCell  ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone);
+    
+    if (indexPath.section != 2) {
+        cell.textLabel.text = [self titleForIndex:index];
+        cell.detailTextLabel.text = [self detailForIndex:index];
+    } else {
+        NSDictionary *artifact = _build.buildDetail.artifacts[indexPath.row];
+        cell.textLabel.text = [artifact objectForKey:@"fileName"];
+        cell.detailTextLabel.text = @"";
+    }
+    
     return cell;
 }
 
@@ -181,6 +193,9 @@ typedef NS_ENUM(NSUInteger, FTBuildDetailControllerIndex) {
             break;
         case FTBuildDetailControllerIndexChanges:
             title = FTLangGet(@"Changes");
+            break;
+        case FTBuildDetailControllerIndexArtifacts:
+            title = FTLangGet(@"Artifacts");
             break;
     }
     
@@ -256,6 +271,9 @@ typedef NS_ENUM(NSUInteger, FTBuildDetailControllerIndex) {
     }
     else if(indexPath.section == 1) {
         return indexPath.row + [self tableView:self.tableView numberOfRowsInSection:0];
+    }
+    else if(indexPath.section == 2) {
+        return indexPath.row + [self tableView:self.tableView numberOfRowsInSection:0] + [self tableView:self.tableView numberOfRowsInSection:1];
     }
     else {
         return 0;

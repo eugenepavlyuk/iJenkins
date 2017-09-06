@@ -43,6 +43,14 @@
 #pragma mark Data
 
 - (void)loadData {
+    
+    if (!_selectedView) {
+        _selectedView = [FTAPIServerViewDataObject new];
+        _selectedView.name = @"iOS";
+        _selectedView.urlString = @"https://jm.virtual-solution.de/view/iOS/";
+        [_serverObject setViewToLoad:_selectedView];
+    }
+    
     if (!_serverObject) {
         _isDataAvailable = NO;
         _searchBar.text = @"";
@@ -96,6 +104,11 @@
                         NSArray *allNames = @[@"All", @"Alle", @"Todo", @"Tous", @"\u3059\u3079\u3066", @"\u0412\u0441\u0435", @"\u5168\u90e8", @"Tutto", @"Tudo", @"Hepsi"];
                         
                         for (FTAPIServerViewDataObject *v in _views) {
+                            if ([v.name isEqualToString:@"iOS"]) {
+                                _selectedView = v;
+                                break;
+                            }
+                            
                             if ([allNames containsObject:v.name]) {
                                 _selectedView=v;
                                 break;

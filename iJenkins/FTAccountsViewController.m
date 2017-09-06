@@ -7,26 +7,21 @@
 //
 
 #import "FTAccountsViewController.h"
-#import "FTServerHomeViewController.h"
 #import "FTNoAccountCell.h"
 #import "FTAccountCell.h"
 #import "FTIconCell.h"
 #import "FTSmallTextCell.h"
 #import "GCNetworkReachability.h"
-#import "BonjourBuddy.h"
 #import "NSData+Networking.h"
+#import "FTServerHomeViewController.h"
 
 
 @interface FTAccountsViewController () <FTAccountCellDelegate>
 
 @property (nonatomic, strong) NSArray *data;
-@property (nonatomic, strong) NSArray *demoAccounts;
 
 @property (nonatomic, strong) NSMutableDictionary *reachabilityCache;
 @property (nonatomic, strong) NSMutableDictionary *reachabilityStatusCache;
-
-@property (nonatomic, strong) BonjourBuddy *bonjour;
-@property (nonatomic, strong) NSArray *bonjourAccounts;
 
 @end
 
@@ -62,14 +57,6 @@
             return _data;
             break;
             
-        case 1:
-            return _bonjourAccounts;
-            break;
-            
-        case 2:
-            return _demoAccounts;
-            break;
-            
         default:
             return nil;
             break;
@@ -84,10 +71,8 @@
 
 - (void)createTableView {
     _data = [[FTAccountsManager sharedManager] accounts];
-    _demoAccounts = [[FTAccountsManager sharedManager] demoAccounts];
     
     [super createTableView];
-    //[self.tableView registerForReloadDataOnTranslationChange];
 }
 
 - (void)createTopButtons {
@@ -106,9 +91,6 @@
     [self createTopButtons];
     
     [self setTitle:FTLangGet(@"Servers")];
-    //[self registerTitleWithTranslationKey:@"Servers"];
-    
-    [self startCheckingForJenkins];
 }
 
 #pragma mark View lifecycle
@@ -160,88 +142,16 @@
     [edit setTitle:title];
 }
 
-#pragma mark Bonjour Jenkins discovery
-
-- (void)startCheckingForJenkins {
-    _bonjour = [[BonjourBuddy alloc] initWithServiceId:@"_hudson._tcp."];
-    _bonjour.me = @{@"name": [[UIDevice currentDevice] name]};
-    [_bonjour start];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(peersChanged) name:BonjourBuddyPeersChangedNotification object:nil];
-}
-
-#pragma mark Bonjour discovery
-
-- (BOOL)isAccountUrlInBonjour:(NSURL *)url {
-    for (FTAccount *acc in _bonjourAccounts) {
-        if ([acc.host isEqualToString:url.host] && acc.port == url.port.integerValue) {
-            return YES;
-        }
-    }
-    return NO;
-}
-
-- (void)peersChanged {
-    if (self == self.navigationController.viewControllers.lastObject) {
-        NSMutableArray *arr = [NSMutableArray array];
-        for (NSDictionary *peer in _bonjour.peers) {
-            NSURL *url = [NSURL URLWithString:peer[@"url"]];
-            if (peer[@"url"]) {
-                FTAccount *acc = [[FTAccount alloc] init];
-                [acc setAccountType:FTAccountTypeBonjour];
-                NSNetService *service = peer[@"service"];
-                if (service.addresses.count > 0) {
-                    NSMutableArray *addr = [NSMutableArray array];
-                    for (NSData *data in service.addresses) {
-                        NSString *host = [data host];
-                        if (acc.host.length < 2) [acc setHost:[host copy]];
-                        [addr addObject:host];
-                    }
-                    [acc setAlternativeAddresses:[addr copy]];
-                }
-                else {
-                    [acc setHost:url.host];
-                }
-                [acc setHost:url.host];
-                [acc setName:url.host];
-                [acc setPort:service.port];
-                [acc setHttps:[url.scheme isEqualToString:@"https"]];
-                [arr addObject:acc];
-                
-                if (acc.alternativeAddresses.count > 0) {
-                    FTAccount *acc2 = [[FTAccount alloc] init];
-                    NSString *host = acc.alternativeAddresses.lastObject;
-                    [acc2 setHost:host];
-                    [acc2 setName:[NSString stringWithFormat:@"%@ (%@)", acc.name, FTLangGet(@"Alternative")]];
-                    [acc2 setPort:acc.port];
-                    [acc2 setHttps:acc.https];
-                    [acc2 setAlternativeAddresses:acc.alternativeAddresses];
-                    [arr addObject:acc2];
-                }
-            }
-        }
-        _bonjourAccounts = [arr copy];
-    }
-    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
-
 #pragma mark Table view delegate and data source methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     switch (section) {
         case 0:
             return ((_data.count > 0) ? _data.count : 1);
-            break;
-            
-        case 1:
-            return ((_bonjourAccounts.count > 0) ? _bonjourAccounts.count : 1);
-            break;
-            
-        case 2:
-            return _demoAccounts.count;
             break;
             
         default:
@@ -263,14 +173,6 @@
     switch (section) {
         case 0:
             return FTLangGet(@"Your accounts");
-            break;
-            
-        case 1:
-            return FTLangGet(@"Local network");
-            break;
-            
-        case 2:
-            return FTLangGet(@"Demo account");
             break;
             
         default:
@@ -394,16 +296,8 @@
     if (indexPath.section == 0 && _data.count == 0) {
         return [self cellForNoAccount];
     }
-    else if (indexPath.section == 1) {
-        if (_bonjourAccounts.count > 0) {
-            return [self accountCellForIndexPath:indexPath];
-        }
-        else {
-            return [FTSmallTextCell smallTextCellForTable:tableView withText:FTLangGet(@"No instances available at the moment")];
-        }
-    }
     else {
-        if (indexPath.section == 0 || indexPath.section == 2) {
+        if (indexPath.section == 0) {
             return [self accountCellForIndexPath:indexPath];
         }
         
@@ -415,26 +309,15 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0 && _data.count == 0) {
         [self didCLickAddItem:nil];
-    }
-    else {
-        if (indexPath.section != 3) {
-            if ([self datasourceForIndexPath:indexPath].count > 0) {
-                FTAccount *acc = [self accountForIndexPath:indexPath];
-                [[FTAccountsManager sharedManager] setSelectedAccount:acc];
-                [FTAPIConnector resetForAccount:acc];
-                
-                FTServerHomeViewController *c = [[FTServerHomeViewController alloc] init];
-                [c setTitle:acc.name];
-                [self.navigationController pushViewController:c animated:YES];
-            }
-        }
-        else {
-            if (indexPath.row == 0) {
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/rafiki270/iJenkins"]];
-            }
-            else {
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/Ridiculous-Innovations/SSHAutomator"]];
-            }
+    } else {
+        if ([self datasourceForIndexPath:indexPath].count > 0) {
+            FTAccount *acc = [self accountForIndexPath:indexPath];
+            [[FTAccountsManager sharedManager] setSelectedAccount:acc];
+            [FTAPIConnector resetForAccount:acc];
+            
+            FTServerHomeViewController *c = [[FTServerHomeViewController alloc] init];
+            [c setTitle:acc.name];
+            [self.navigationController pushViewController:c animated:YES];
         }
     }
 }

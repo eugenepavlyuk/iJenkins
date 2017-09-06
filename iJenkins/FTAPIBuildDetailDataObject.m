@@ -70,6 +70,10 @@
         
     }
     
+    if (data[@"artifacts"] != nil && [data[@"artifacts"] isKindOfClass:[NSArray class]]) {
+        _artifacts = data[@"artifacts"];
+    }
+    
     _dateExecuted = [NSDate dateWithTimeIntervalSince1970:_timestamp];
     if (data[@"changeSet"] && [data[@"changeSet"] count] != 0) {
         _changeSet = [[FTAPIBuildDetailChangeSetDataObject alloc] init];
