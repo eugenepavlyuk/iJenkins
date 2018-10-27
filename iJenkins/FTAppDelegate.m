@@ -7,8 +7,9 @@
 //
 
 #import "FTAppDelegate.h"
-#import <Crashlytics/Crashlytics.h>
 #import "FTAccountsViewController.h"
+#import <Crashlytics/Crashlytics.h>
+#import <Fabric/Fabric.h>
 
 @implementation FTAppDelegate
 
@@ -19,7 +20,8 @@
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Crash reporting
-//    [Crashlytics startWithAPIKey:@"645cad88976887e985fc9e2d08345ca9cc583918"];
+    [Crashlytics startWithAPIKey:@"c04f86b258abf2c1b4a32c0b5094da2bed6701ce"];
+    [Fabric with:@[[Crashlytics class]]];
     
     _viewController = [[FTAccountsViewController alloc] init];
     UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:_viewController];

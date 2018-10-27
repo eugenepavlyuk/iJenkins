@@ -12,6 +12,7 @@
 #import "FTLogViewController.h"
 #import "FTBuildInfoCell.h"
 #import "NSDate+Formatting.h"
+#import "UIImage+ImageWithColor.h"
 
 /**
  *  This enum defines concrete rows of the build detail controller. To reorder informations (cells), just change the order in this enum, change number of rows in const values and corresponding mapping methods -indexForIndexIndexPath and -indexPathForIndex
@@ -94,6 +95,8 @@ typedef NS_ENUM(NSUInteger, FTBuildDetailControllerIndex) {
         cell.layoutType = FTBasicCellLayoutTypeDefault;
     }
     
+    cell.accessoryView = nil;
+    
     FTBuildDetailControllerIndex index = [self indexForIndexPath:indexPath];
     
     BOOL canOpenCell = (indexPath.section == 1);
@@ -119,11 +122,43 @@ typedef NS_ENUM(NSUInteger, FTBuildDetailControllerIndex) {
         cell.detailTextLabel.text = [self detailForIndex:index];
     } else {
         NSDictionary *artifact = _build.buildDetail.artifacts[indexPath.row];
-        cell.textLabel.text = [artifact objectForKey:@"fileName"];
+        NSString *fileName = [artifact objectForKey:@"fileName"];
+        cell.textLabel.text = fileName;
         cell.detailTextLabel.text = @"";
+        
+        if ([fileName containsString:@".xml"]) {
+            UIButton *installButton = [UIButton buttonWithType:UIButtonTypeCustom];
+            [installButton setTitle:@"Install" forState:UIControlStateNormal];
+            [installButton setBackgroundImage:[UIImage resizeableImageWithColor:[UIColor colorForJenkinsColorCode:@"green"]] forState:UIControlStateNormal];
+            [installButton addTarget:self action:@selector(installButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+            installButton.frame = CGRectMake(0, 0, 90, 38);
+            [installButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            installButton.layer.cornerRadius = 7.f;
+            installButton.clipsToBounds = YES;
+            installButton.tag = indexPath.row;
+            
+            cell.accessoryView = installButton;
+        }
     }
     
     return cell;
+}
+
+- (void)installButtonTapped:(UIButton *)button {
+    NSDictionary *dict = _build.buildDetail.artifacts[button.tag];
+    
+    NSString *fileName = dict[@"fileName"];
+    
+    if ([[fileName pathExtension] isEqualToString:@"xml"]) {
+        NSString *relativePath = dict[@"relativePath"];
+        NSString *fullPath = [_build.buildDetail.urlString stringByAppendingPathComponent:[NSString stringWithFormat:@"artifact/%@", relativePath]];
+        
+        NSString *installationLink = [NSString stringWithFormat:@"itms-services://?action=download-manifest&amp;url=%@", fullPath];
+        
+        NSURL *url = [NSURL URLWithString:installationLink];
+        
+        [[UIApplication sharedApplication] openURL:url];
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
